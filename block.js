@@ -13,9 +13,8 @@ class Block{
     toString(){
        return `Block -
        Timestamp:   ${this.timestamp}
-       Last Hash:   ${this.lastHash.substring(0,10)}
-       BigHash:     ${this.hash}
-       Hash:        ${this.hash.substring(0,10)}
+       Last Hash:   ${this.lastHash}
+       Hash:        ${this.hash}
        Data         ${this.data}`; 
     }
     
@@ -36,8 +35,6 @@ class Block{
     static hash(timestamp,lastHash,data){
         return SHA256(`${timestamp}${lastHash}${data}`).toString();
     }
-
-
 
 }
 
