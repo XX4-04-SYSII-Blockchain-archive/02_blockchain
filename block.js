@@ -7,6 +7,7 @@ class Block{
         this.data = data;
     }
 
+    // Ausgabe als String ...
     toString(){
        return `Block -
        Timestamp:   ${this.timestamp}
